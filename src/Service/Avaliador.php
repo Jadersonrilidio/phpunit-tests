@@ -7,10 +7,12 @@ use Alura\Leilao\Model\Leilao;
 
 class Avaliador
 {
-    private float $menorValor;
-    private float $maiorValor;
-    /** @var Lance[] */
-    private array $maioresLances;
+    /** @var float */
+    private $menorValor;
+    /** @var float */
+    private $maiorValor;
+    /** @var Lance[]|array */
+    private $maioresLances;
 
     /**
      * 
