@@ -4,12 +4,9 @@ namespace Alura\Leilao\Model;
 
 class Usuario
 {
-    /** @var string */
-    private $nome;
-
-    public function __construct(string $nome)
+    public function __construct(private string $nome)
     {
-        $this->nome = $nome;
+        //
     }
 
     public function getNome(): string

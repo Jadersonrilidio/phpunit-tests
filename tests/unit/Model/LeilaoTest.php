@@ -1,11 +1,10 @@
 <?php
 
-namespace Alura\Leilao\Tests;
+namespace Alura\Leilao\Tests\Unit\Model;
 
 use Alura\Leilao\Model\Lance;
 use Alura\Leilao\Model\Leilao;
 use Alura\Leilao\Model\Usuario;
-use Exception;
 use PHPUnit\Framework\TestCase;
 
 class LeilaoTest extends TestCase
