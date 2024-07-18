@@ -13,7 +13,7 @@ class Leilao
         $this->con = $con;
     }
 
-    public function salva(ModelLeilao $leilao): void
+    public function salva(ModelLeilao $leilao): ModelLeilao
     {
         $sql = 'INSERT INTO leiloes (descricao, finalizado, dataInicio) VALUES (?, ?, ?)';
         $stm = $this->con->prepare($sql);
@@ -21,6 +21,12 @@ class Leilao
         $stm->bindValue(2, $leilao->getFinalizado(), \PDO::PARAM_BOOL);
         $stm->bindValue(3, $leilao->getDataInicio()->format('Y-m-d'));
         $stm->execute();
+
+        return new ModelLeilao(
+            $leilao->getDescricao(),
+            $leilao->getDataInicio(),
+            $this->con->lastInsertId(),
+        );
     }
 
     /**

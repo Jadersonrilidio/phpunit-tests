@@ -12,6 +12,8 @@
         "phpunit/phpunit": "^10.5"
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "test-un": "vendor/bin/phpunit --testsuite=unit",
+        "test-in": "vendor/bin/phpunit --testsuite=integration"
     }
 }

@@ -1,24 +1,8 @@
-Avaliador (Alura\Leilao\Tests\Unit\Service\Avaliador)
- [x] Avaliador deve retornar o maior e menor valores with data set "ordem-crescente"
- [x] Avaliador deve retornar o maior e menor valores with data set "ordem-decrescente"
- [x] Avaliador deve retornar o maior e menor valores with data set "ordem-aleatoria"
- [x] Avaliador deve buscar os tres maiores lances em ordem crescente with data set "ordem-crescente"
- [x] Avaliador deve buscar os tres maiores lances em ordem crescente with data set "ordem-decrescente"
- [x] Avaliador deve buscar os tres maiores lances em ordem crescente with data set "ordem-aleatoria"
- [x] Avaliador sempre ordena lances em ordem crescente with data set "ordem-crescente"
- [x] Avaliador sempre ordena lances em ordem crescente with data set "ordem-decrescente"
- [x] Avaliador sempre ordena lances em ordem crescente with data set "ordem-aleatoria"
- [x] Leilao vazio nao pode ser avaliado with data set "leilao-vazio"
- [x] Leilao finalizado nao pode ser avaliado with data set "ordem-crescente"
+Leilao Dao (Alura\Leilao\Tests\Integration\Dao\LeilaoDao)
+ [x] Busca leiloes nao finalizados with data set #0
+ [x] Busca leiloes finalizados with data set #0
+ [x] Status do leilao deve ser alterado ao atualizar
 
-Encerrador (Alura\Leilao\Tests\Unit\Service\Encerrador)
- [x] Leiloes com mais de uma semana devem ser encerrados
- [x] Deve continuar o processamento ao encontrar erro ao enviar email
- [x] So deve enviar email de termino apos leilao finalizado
-
-Leilao (Alura\Leilao\Tests\Unit\Model\Leilao)
- [x] Leilao deve receber lances with data set "leilao-com-4-lances"
- [x] Leilao deve receber lances with data set "leilao-com-2-lances"
- [x] Usuario nao pode dar dois lances consecutivos
- [x] Usuario nao pode dar mais de cinco lances por leilao
+Rest (Alura\Leilao\Tests\Integration\Api\Rest)
+ [x] Api rest deve retornar um array de leiloes
 
